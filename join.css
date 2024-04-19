@@ -9,6 +9,13 @@
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
 }
+.carousel-control-prev {
+    left: 20px; /* Move the left carousel button to the far left */
+}
+
+.carousel-control-next {
+    right: 20px; /* Move the right carousel button to the far right */
+}
 
 .container {
     position: absolute;
@@ -75,8 +82,8 @@
 .text-rainbow-animation {
     font-family: arial black;
     padding-left: 70px;
-    font-size: 14px;
-    background-image: linear-gradient(to right,green,blue,indigo,violet, red);
+    font-size: 10px;
+    background-image: linear-gradient(to right,white, green, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow-animation 35s linear infinite;
@@ -84,12 +91,12 @@
 
 @keyframes rainbow-animation {
     to {
-        background-position: 4500vh;
+        background-position: 1500vh;
     }
 }
 
 .navbar-brand {
-    padding-left: 70px; /* Adjust the padding as needed */
+    /*padding-left: Auto;  Adjust the padding as needed */
 }
 
 .custom-row {
